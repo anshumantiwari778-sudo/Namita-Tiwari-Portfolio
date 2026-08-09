@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Guidance | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050816, #071b5c, #063b91);
+            color: white;
+            padding: 50px 8%;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            margin-bottom: 45px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            margin-bottom: 45px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .header h1 span {
+            color: #22d3ee;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .guidance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .guidance-card {
+            padding: 30px;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+
+        .guidance-card:hover {
+            transform: translateY(-6px);
+            border-color: #22d3ee;
+        }
+
+        .guidance-card h2 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .guidance-card p {
+            color: #dbeafe;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .guidance-card button {
+            border: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            background: #22d3ee;
+            color: #031525;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .guidance-card button:hover {
+            background: white;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 6%;
+            }
+
+            .header h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="portal.html" class="back">← Back to Academic Portal</a>
+
+    <div class="header">
+        <h1>Student <span>Guidance</span></h1>
+        <p>
+            Academic mentorship, project guidance, research support
+            and student development.
+        </p>
+    </div>
+
+    <div class="guidance-grid">
+
+        <div class="guidance-card">
+            <h2>🎓 Academic Mentorship</h2>
+            <p>
+                Guidance for academic planning, learning strategies
+                and subject-related development.
+            </p>
+            <button onclick="alert('Academic Mentorship section coming soon.')">
+                Explore
+            </button>
+        </div>
+
+        <div class="guidance-card">
+            <h2>💻 Project Guidance</h2>
+            <p>
+                Support for selecting, planning and developing
+                academic and technical projects.
+            </p>
+            <button onclick="alert('Project Guidance section coming soon.')">
+                Explore
+            </button>
+        </div>
+
+        <div class="guidance-card">
+            <h2>🔬 Research Support</h2>
+            <p>
+                Guidance related to research ideas, academic work
+                and research-oriented projects.
+            </p>
+            <button onclick="alert('Research Support section coming soon.')">
+                Explore
+            </button>
+        </div>
+
+        <div class="guidance-card">
+            <h2>🚀 Student Development</h2>
+            <p>
+                Encourage students to develop technical skills,
+                creativity, innovation and research capabilities.
+            </p>
+            <button onclick="alert('Student Development section coming soon.')">
+                Explore
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

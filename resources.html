@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Resources | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050816, #071b5c, #063b91);
+            color: white;
+            padding: 50px 8%;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            margin-bottom: 45px;
+            font-size: 16px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            margin-bottom: 45px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .header h1 span {
+            color: #22d3ee;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .resource-card {
+            padding: 30px;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-6px);
+            border-color: #22d3ee;
+        }
+
+        .resource-card h2 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .resource-card p {
+            color: #dbeafe;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .resource-card button {
+            border: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            background: #22d3ee;
+            color: #031525;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .resource-card button:hover {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="portal.html" class="back">← Back to Academic Portal</a>
+
+    <div class="header">
+        <h1>Student <span>Resources</span></h1>
+        <p>Learning materials, academic resources and important information for students.</p>
+    </div>
+
+    <div class="resources">
+
+        <div class="resource-card">
+            <h2>📚 Lecture Notes</h2>
+            <p>Access lecture notes and subject-wise academic material.</p>
+            <button onclick="alert('Lecture Notes section coming soon.')">
+                View Notes
+            </button>
+        </div>
+
+        <div class="resource-card">
+            <h2>📖 Study Materials</h2>
+            <p>Useful study materials for Mathematics, AI and Data Science.</p>
+            <button onclick="alert('Study Materials section coming soon.')">
+                View Materials
+            </button>
+        </div>
+
+        <div class="resource-card">
+            <h2>🎓 Student PPTs</h2>
+            <p>Explore student presentations and academic work.</p>
+            <button onclick="alert('Student PPTs section coming soon.')">
+                View PPTs
+            </button>
+        </div>
+
+        <div class="resource-card">
+            <h2>📝 Assignments</h2>
+            <p>Access assignments and academic tasks for students.</p>
+            <button onclick="alert('Assignments section coming soon.')">
+                View Assignments
+            </button>
+        </div>
+
+        <div class="resource-card">
+            <h2>📢 Announcements</h2>
+            <p>Important academic announcements and updates.</p>
+            <button onclick="alert('Announcements section coming soon.')">
+                View Updates
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

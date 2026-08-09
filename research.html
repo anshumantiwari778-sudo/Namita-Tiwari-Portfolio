@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050816, #071b5c, #063b91);
+            color: white;
+            padding: 50px 8%;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            margin-bottom: 45px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            margin-bottom: 45px;
+        }
+
+        .header h1 {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .header h1 span {
+            color: #22d3ee;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .research {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .research-card {
+            padding: 30px;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+
+        .research-card:hover {
+            transform: translateY(-6px);
+            border-color: #22d3ee;
+        }
+
+        .research-card h2 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .research-card p {
+            color: #dbeafe;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .research-card button {
+            border: none;
+            padding: 12px 22px;
+            border-radius: 25px;
+            background: #22d3ee;
+            color: #031525;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .research-card button:hover {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="portal.html" class="back">← Back to Academic Portal</a>
+
+    <div class="header">
+        <h1>Academic <span>Research</span></h1>
+        <p>Research, publications, projects and collaborative academic activities.</p>
+    </div>
+
+    <div class="research">
+
+        <div class="research-card">
+            <h2>🔬 Research Projects</h2>
+            <p>Explore research projects in Mathematics, Artificial Intelligence and Data Science.</p>
+            <button onclick="alert('Research Projects section coming soon.')">
+                View Projects
+            </button>
+        </div>
+
+        <div class="research-card">
+            <h2>📄 Publications</h2>
+            <p>Explore academic publications and research contributions.</p>
+            <button onclick="alert('Publications section coming soon.')">
+                View Publications
+            </button>
+        </div>
+
+        <div class="research-card">
+            <h2>💡 Research Discussions</h2>
+            <p>Academic discussions and collaborative research activities.</p>
+            <button onclick="alert('Research Discussions section coming soon.')">
+                Explore Discussions
+            </button>
+        </div>
+
+        <div class="research-card">
+            <h2>🤝 Collaborative Work</h2>
+            <p>Collaborative academic work involving students and researchers.</p>
+            <button onclick="alert('Collaborative Work section coming soon.')">
+                View Collaboration
+            </button>
+        </div>
+
+        <div class="research-card">
+            <h2>🚀 Ongoing Research</h2>
+            <p>Current research interests and ongoing academic initiatives.</p>
+            <button onclick="alert('Ongoing Research section coming soon.')">
+                Explore Research
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>

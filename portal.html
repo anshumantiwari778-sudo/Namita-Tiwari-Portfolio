@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Portal | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(0, 120, 255, 0.25), transparent 35%),
+                radial-gradient(circle at 80% 80%, rgba(0, 80, 255, 0.25), transparent 35%),
+                #050816;
+        }
+
+        .portal {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #22d3ee;
+        }
+
+        .logout {
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .welcome {
+            margin-bottom: 40px;
+        }
+
+        .welcome h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .welcome h1 span {
+            color: #22d3ee;
+        }
+
+        .welcome p {
+            color: #b8c4d9;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid rgba(100,180,255,0.25);
+            border-radius: 20px;
+            background: rgba(30,70,150,0.15);
+            backdrop-filter: blur(10px);
+        }
+
+        .card h2 {
+            color: #22d3ee;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #c8d2e5;
+            line-height: 1.6;
+        }
+
+        .card button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background: #22d3ee;
+            color: #06101f;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .welcome h1 {
+                font-size: 32px;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="portal">
+
+        <div class="header">
+            <div class="logo">NT.</div>
+
+            <a href="index.html" class="logout" onclick="logoutUser()">
+    Logout
+</a>
+        </div>
+
+        <div class="welcome">
+            <h1>Welcome to the <span>Academic Portal</span></h1>
+            <p>
+                Dr. Namita Tiwari · Mathematics · Artificial Intelligence · Research
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>📚 Student Resources</h2>
+                <p>
+                    Access learning materials, academic resources and
+                    important information for students.
+                </p>
+                <button onclick="showResources()">View Resources</button>
+            </div>
+
+            <div class="card">
+                <h2>🔬 Research</h2>
+                <p>
+                    Research discussions, projects, publications and
+                    collaborative academic activities.
+                </p>
+                <button onclick="showResearch()">View Research</button>
+            </div>
+
+            <div class="card">
+                <h2>🤖 AI & Data Science</h2>
+                <p>
+                    Explore AI projects, data science initiatives and
+                    student innovations.
+                </p>
+                <button onclick="showAI()">Explore AI</button>
+            </div>
+
+            <div class="card">
+                <h2>🎓 Student Guidance</h2>
+                <p>
+                    Academic mentorship, project guidance and
+                    student development resources.
+                </p>
+                <button onclick="showGuidance()">View Guidance</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+function showResources() {
+    window.location.href = "resources.html";
+}
+</script>
+<script>
+function showResearch() {
+    window.location.href = "research.html";
+}
+</script>
+<script>
+function showAI() {
+    window.location.href = "ai.html";
+}
+</script>
+<script>
+function showGuidance() {
+    window.location.href = "guidance.html";
+}
+</script>
+<script>
+function logoutUser() {
+    alert("You have been logged out successfully.");
+}
+</script>
+
+</body>
+</html>
