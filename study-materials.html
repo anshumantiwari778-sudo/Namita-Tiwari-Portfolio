@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Materials | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050816, #071b5c, #003b8f);
+            color: white;
+            padding: 50px 8%;
+        }
+
+        .back {
+            display: inline-block;
+            color: #f5c542;
+            text-decoration: none;
+            margin-bottom: 35px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .header h1 span {
+            color: #22d3ee;
+        }
+
+        .header p {
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .materials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .book-card {
+            padding: 30px;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            transition: 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-6px);
+            border-color: #22d3ee;
+        }
+
+        .book-number {
+            color: #f5c542;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .book-card h2 {
+            color: #22d3ee;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .book-card p {
+            color: #dbeafe;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .open-btn {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 25px;
+            background: #f5c542;
+            color: #031525;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .open-btn:hover {
+            background: #ffe27a;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 30px 5%;
+            }
+
+            .header h1 {
+                font-size: 32px;
+            }
+        }
+        .download-btn {
+    display: inline-block;
+    padding: 11px 20px;
+    margin-left: 8px;
+    border-radius: 25px;
+    background: #FFD700;
+    color: #031525 !important;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #FFFF00;
+    color: #031525 !important;
+}
+    </style>
+</head>
+
+<body>
+
+    <a href="resources.html" class="back">← Back to Student Resources</a>
+
+    <div class="header">
+        <h1>📚 <span>Study Materials</span></h1>
+        <p>
+            Books and learning resources for Mathematics,
+            Artificial Intelligence and Data Science.
+        </p>
+    </div>
+
+    <div class="materials">
+
+        <!-- BOOK 01 -->
+        <div class="book-card">
+            <div class="book-number">01</div>
+
+            <h2>Artificial Intelligence: A Modern Approach</h2>
+
+            <p>
+                3rd Edition — Stuart Russell & Peter Norvig
+            </p>
+            <span class="book-category">Artificial Intelligence</span>
+
+            <p class="book-description">
+    Covers intelligent agents, problem solving, search, knowledge representation,
+    learning and fundamental concepts of Artificial Intelligence.
+</p>
+
+            <a href="study-materials/Artificial%20Intelligence%20-%20A%20Modern%20Approach%20%283rd%20Edition%29%20by%20Stuart%20Russell%20%26%20Peter%20Norvig.pdf"
+               target="_blank"
+               class="open-btn">
+                Open PDF →
+            </a>
+            <a href="study-materials/Artificial%20Intelligence%20-%20A%20Modern%20Approach%20%283rd%20Edition%29%20by%20Stuart%20Russell%20%26%20Peter%20Norvig.pdf"
+   download
+   class="download-btn">
+    Download PDF ↓
+</a>
+        </div>
+
+
+        <!-- BOOK 02 -->
+        <div class="book-card">
+            <div class="book-number">02</div>
+
+            <h2>Calculus – Volume 3</h2>
+
+            <p>
+                Gilbert Strang & Edwin Herman
+            </p>
+            <span class="book-category">Mathematics</span>
+
+            <p class="book-description">
+    Provides learning material in multivariable calculus, including
+    differentiation, integration and applications.
+</p>
+
+            <a href="study-materials/calculus-volume-3%20by%20Gibert%20Strang%20%26%20Edwin%20Herman.pdf"
+               target="_blank"
+               class="open-btn">
+                Open PDF →
+            </a>
+            <a href="study-materials/calculus-volume-3%20by%20Gibert%20Strang%20%26%20Edwin%20Herman.pdf"
+   download
+   class="download-btn">
+    Download PDF ↓
+</a>
+        </div>
+
+
+        <!-- BOOK 03 -->
+        <div class="book-card">
+            <div class="book-number">03</div>
+
+            <h2>Introduction to AI</h2>
+
+            <p>
+                Wolfgang Ertel
+            </p>
+            <span class="book-category">Artificial Intelligence</span>
+
+            <p class="book-description">
+    Introduces the fundamental concepts, methods and techniques
+    used in Artificial Intelligence.
+</p>
+
+            <a href="study-materials/Introduction%20to%20AI%20by%20Wolfgang%20Ertel.pdf"
+               target="_blank"
+               class="open-btn">
+                Open PDF →
+            </a>
+            <a href="study-materials/Introduction%20to%20AI%20by%20Wolfgang%20Ertel.pdf"
+   download
+   class="download-btn">
+    Download PDF ↓
+</a>
+        </div>
+
+
+        <!-- BOOK 04 -->
+        <div class="book-card">
+            <div class="book-number">04</div>
+
+            <h2>Maths with Data Science</h2>
+
+            <p>
+                Seymour Lipschutz & Marc Lipson
+            </p>
+            <span class="book-category">Data Science & Mathematics</span>
+
+            <p class="book-description">
+    Provides mathematical concepts and techniques that support
+    data analysis and Data Science applications.
+</p>
+            <a href="study-materials/Maths%20with%20Data%20Science%20by%20Seymour%20Lipschutz%20%26%20Marc%20Lipson.pdf"
+               target="_blank"
+               class="open-btn">
+                Open PDF →
+            </a>
+            <a href="study-materials/Maths%20with%20Data%20Science%20by%20Seymour%20Lipschutz%20%26%20Marc%20Lipson.pdf"
+   download
+   class="download-btn">
+    Download PDF ↓
+</a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

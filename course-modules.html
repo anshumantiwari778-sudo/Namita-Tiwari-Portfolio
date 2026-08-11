@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Course Modules | Dr. Namita Tiwari</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #050816, #071b5c, #003b8f);
+            color: white;
+            min-height: 100vh;
+            padding: 50px 8%;
+            font-family: Arial, sans-serif;
+        }
+
+        .back-btn {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-header {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .course-header h1 {
+            font-size: 42px;
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .course-header p {
+            color: #cbd5e1;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .course-card {
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            backdrop-filter: blur(12px);
+        }
+
+        .course-card:hover {
+            border-color: #22d3ee;
+            transform: translateY(-5px);
+            transition: 0.3s;
+        }
+
+        .course-number {
+            color: #FFD700;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .course-card h2 {
+            color: #22d3ee;
+            margin-bottom: 15px;
+        }
+
+        .course-card p {
+            color: #dbeafe;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .course-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 11px 20px;
+            border-radius: 25px;
+            background: #FFD700;
+            color: #031525;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .course-btn:hover {
+            background: #FFFF00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="resources.html" class="back-btn">
+        ← Back to Student Resources
+    </a>
+
+    <div class="course-header">
+        <h1>🎓 Course Modules</h1>
+
+        <p>
+            M.Sc. Mathematics with Artificial Intelligence & Data Science
+        </p>
+    </div>
+
+    <div class="courses">
+
+        <!-- COURSE 01 -->
+        <div class="course-card">
+
+            <div class="course-number">COURSE 01</div>
+
+            <h2>🤖 Artificial Intelligence</h2>
+
+            <p>
+                <strong>B260703T • 4 Credits</strong>
+            </p>
+
+            <p>
+                Foundations of Artificial Intelligence, intelligent agents,
+                problem solving, knowledge and reasoning, learning and
+                Natural Language Processing.
+            </p>
+
+            <a href="ai.html" class="course-btn">
+                Explore Course →
+            </a>
+
+        </div>
+
+
+        <!-- COURSE 02 -->
+        <div class="course-card">
+
+            <div class="course-number">COURSE 02</div>
+
+            <h2>📊 Mathematics for Data Science</h2>
+
+            <p>
+                <strong>B260704T • 4 Credits</strong>
+            </p>
+
+            <p>
+                Mathematical and logical foundations for Data Science,
+                Artificial Intelligence and Machine Learning, including
+                set theory, calculus, vectors, matrices and determinants.
+            </p>
+
+            <a href="math-ds.html" class="course-btn">
+                Explore Course →
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

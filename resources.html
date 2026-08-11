@@ -81,19 +81,29 @@
             margin-bottom: 20px;
         }
 
-        .resource-card button {
-            border: none;
-            padding: 12px 22px;
-            border-radius: 25px;
-            background: #22d3ee;
-            color: #031525;
-            font-weight: bold;
-            cursor: pointer;
-        }
+        .resource-card button,
+.resource-card a {
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    color: #FFD700 !important;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        .resource-card button:hover {
-            background: white;
-        }
+.resource-card button:hover,
+.resource-card a:hover {
+    color: #FFFF00 !important;
+}
+
+        .resource-card .feedback-btn {
+    color: #FFD700 !important;
+    font-weight: bold;
+}
+
+.resource-card .feedback-btn:hover {
+    color: #FFFF00 !important;
+}
     </style>
 </head>
 
@@ -106,48 +116,119 @@
         <p>Learning materials, academic resources and important information for students.</p>
     </div>
 
-    <div class="resources">
+    
 
-        <div class="resource-card">
-            <h2>📚 Lecture Notes</h2>
-            <p>Access lecture notes and subject-wise academic material.</p>
-            <button onclick="alert('Lecture Notes section coming soon.')">
-                View Notes
-            </button>
-        </div>
+        <div class="resources">
 
-        <div class="resource-card">
-            <h2>📖 Study Materials</h2>
-            <p>Useful study materials for Mathematics, AI and Data Science.</p>
-            <button onclick="alert('Study Materials section coming soon.')">
-                View Materials
-            </button>
-        </div>
+    <!-- 01 COURSE MODULES -->
+    <div class="resource-card">
+        <span class="card-number">01</span>
+        <h2>📚 Course Modules</h2>
+        <p>Structured course modules, syllabus topics, learning resources and academic materials for Mathematics, AI and Data Science.</p>
+        <a href="course-modules.html" class="resource-btn">
+    Explore Modules →
+</a>
+    </div>
 
-        <div class="resource-card">
-            <h2>🎓 Student PPTs</h2>
-            <p>Explore student presentations and academic work.</p>
-            <button onclick="alert('Student PPTs section coming soon.')">
-                View PPTs
-            </button>
-        </div>
+    <!-- 02 LECTURE SERIES -->
+    <div class="resource-card">
+        <span class="card-number">02</span>
+        <h2>🎓 Lecture Series</h2>
+        <p>Lecture materials, recordings and subject-focused learning sessions covering Mathematics, Artificial Intelligence and Data Science.</p>
+        <a href="#" class="resource-btn">View Lectures →</a>
+    </div>
 
-        <div class="resource-card">
-            <h2>📝 Assignments</h2>
-            <p>Access assignments and academic tasks for students.</p>
-            <button onclick="alert('Assignments section coming soon.')">
-                View Assignments
-            </button>
-        </div>
+    <!-- 03 EXPERT LECTURES -->
+    <div class="resource-card">
+        <span class="card-number">03</span>
+        <h2>👨‍🏫 Expert Lectures</h2>
+        <p>Knowledge sessions, expert talks and academic insights from invited speakers and subject experts.</p>
+        <a href="#" class="resource-btn">Explore Experts →</a>
+    </div>
 
-        <div class="resource-card">
-            <h2>📢 Announcements</h2>
-            <p>Important academic announcements and updates.</p>
-            <button onclick="alert('Announcements section coming soon.')">
-                View Updates
-            </button>
-        </div>
+    <!-- 04 STUDENT PPTs -->
+    <div class="resource-card">
+        <span class="card-number">04</span>
+        <h2>📊 Student PPTs</h2>
+        <p>Student presentations, seminar slides and academic work created as part of the forum's learning activities.</p>
+        <a href="#" class="resource-btn">View Presentations →</a>
+    </div>
 
+    <!-- 05 PRESENTATION SERIES -->
+    <div class="resource-card">
+        <span class="card-number">05</span>
+        <h2>🎤 Presentation Series</h2>
+        <p>Organized student presentation sessions designed to encourage communication, discussion and academic learning.</p>
+        <a href="#" class="resource-btn">View Series →</a>
+    </div>
+
+    <!-- 06 MINI PROJECTS -->
+    <div class="resource-card">
+        <span class="card-number">06</span>
+        <h2>💡 Mini Projects</h2>
+        <p>Practical projects in Artificial Intelligence, Data Science and Mathematics developed through hands-on learning.</p>
+        <a href="#" class="resource-btn">Explore Projects →</a>
+    </div>
+
+    <!-- 07 STUDENT ACTIVITIES -->
+    <div class="resource-card">
+        <span class="card-number">07</span>
+        <h2>🧑‍💻 Student Activities</h2>
+        <p>Academic activities, collaborative learning, innovation, participation and student-led initiatives.</p>
+        <a href="#" class="resource-btn">View Activities →</a>
+    </div>
+
+    <!-- 08 ASSIGNMENTS -->
+    <div class="resource-card">
+        <span class="card-number">08</span>
+        <h2>📝 Assignments</h2>
+        <p>Academic assignments, practice tasks and learning activities for students.</p>
+        <a href="#" class="resource-btn">View Assignments →</a>
+    </div>
+
+    <!-- 09 FEEDBACK -->
+    <div class="resource-card">
+        <span class="card-number">09</span>
+        <h2>💬 Feedback</h2>
+        <p>Student feedback and reflections to improve learning experiences and academic activities.</p>
+        <a href="#" class="resource-btn feedback-btn">Give Feedback →</a>
+    </div>
+
+    <!-- 10 PRESENTATION SCHEDULE -->
+    <div class="resource-card">
+        <span class="card-number">10</span>
+        <h2>📅 Presentation Schedule</h2>
+        <p>Organized schedules for student presentations, lecture sessions and academic activities.</p>
+        <a href="#" class="resource-btn">View Schedule →</a>
+    </div>
+
+    <!-- 11 STUDY MATERIALS -->
+<div class="resource-card">
+    <span class="card-number">11</span>
+    <h2>📚 Study Materials</h2>
+    <p>
+        Books, reference materials and learning resources for
+        Mathematics, Artificial Intelligence and Data Science.
+    </p>
+
+    <a href="study-materials.html" class="resource-btn">
+        View Study Materials→
+    </a>
+</div>
+
+
+    <!-- 12 ANNOUNCEMENTS -->
+    <div class="resource-card">
+        <span class="card-number">12</span>
+        <h2>📢 Announcements</h2>
+        <p>Important academic announcements, updates and information related to forum activities.</p>
+        <a href="#" class="resource-btn">View Updates →</a>
+    </div>
+
+</div>
+
+</div> 
+    
     </div>
 
 </body>
