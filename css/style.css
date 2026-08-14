@@ -3320,6 +3320,15 @@ body {
     .journey-content {
         min-height: auto;
     }
+
+    .nav-login {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+
+
 }
 /* ================================
    RESEARCH IDENTITY STRIP
