@@ -4519,3 +4519,19 @@ body {
         display: none !important;
     }
 }
+/* ===== REMOVE AI ORBIT FROM MOBILE VIEW ===== */
+@media (max-width: 768px) {
+    .ai-orbit,
+    .ai-orbit-core,
+    .ai-orbit-dot,
+    .ai-right-object,
+    .ai-orbit-container,
+    .ai-orbit-container::before,
+    .ai-orbit-container::after,
+    [class*="ai-orbit"],
+    [class*="ai-right-object"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
