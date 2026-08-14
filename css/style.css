@@ -3351,7 +3351,7 @@ body {
     nav {
         width: 100% !important;
         max-width: 100% !important;
-        overflow: hidden !important;
+        overflow: visible !important;
     }
 
     .nav-container {
