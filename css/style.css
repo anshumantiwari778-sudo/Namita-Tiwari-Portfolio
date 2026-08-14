@@ -4445,3 +4445,16 @@ body {
         display: none !important;
     }
 }
+@media (max-width: 768px) {
+    .ai-orbit,
+    .ai-orbit-core,
+    .ai-orbit-dot,
+    .ai-right-object,
+    .ai-orbit-container,
+    .ai-orbit-container::before,
+    .ai-orbit-container::after,
+    .ai-right-object::before,
+    .ai-right-object::after {
+        display: none !important;
+    }
+}
