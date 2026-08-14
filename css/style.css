@@ -4507,3 +4507,15 @@ body {
         display: none !important;
     }
 }
+/* ===== MOBILE FIX: HIDE AI ORBIT ONLY IN PRESENTATION SERIES ===== */
+@media (max-width: 768px) {
+    .academic-card:has(.ai-orbit) .ai-orbit,
+    .academic-card:has(.ai-orbit) .ai-orbit-core,
+    .academic-card:has(.ai-orbit) .ai-orbit-dot,
+    .academic-card:has(.ai-orbit) .ai-right-object,
+    .academic-card:has(.ai-orbit) .ai-orbit-container,
+    .academic-card:has(.ai-orbit) .ai-orbit-container::before,
+    .academic-card:has(.ai-orbit) .ai-orbit-container::after {
+        display: none !important;
+    }
+}
