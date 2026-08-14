@@ -3368,8 +3368,8 @@ body {
         max-width: 100% !important;
         display: flex !important;
         flex-wrap: nowrap !important;
-        justify-content: center !important;
-        gap: 8px 18px !important;
+        justify-content: flex-start !important;
+        gap: 8px 14px !important;
         margin-top: 10px !important;
         overflow-x: auto !important;
         overflow-y: hidden !important;
