@@ -3492,7 +3492,38 @@ body {
         height: auto;
     }
 }
+/* ===== ACADEMIC FORUM MOBILE FIX ===== */
+@media (max-width: 800px) {
 
+    .academic-layout {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .academic-cards {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+        box-sizing: border-box !important;
+    }
+
+    .academic-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .forum-snapshot {
+        position: relative !important;
+        width: 100% !important;
+        right: auto !important;
+        top: auto !important;
+        margin-top: 24px !important;
+        box-sizing: border-box !important;
+    }
+}
 
 
 }
@@ -3751,10 +3782,12 @@ body {
 }
 
 .academic-cards {
-    width: calc(100% - 410px) !important;
+    width: 100% !important;
+    max-width: 100% !important;
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 24px !important;
+    box-sizing: border-box !important;
 }
 
 .forum-snapshot {
