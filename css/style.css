@@ -3326,6 +3326,171 @@ body {
     visibility: visible !important;
     opacity: 1 !important;
 }
+/* =========================================
+   FINAL MOBILE RESPONSIVE FIX
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* ---------- NAVBAR ---------- */
+
+    .navbar,
+    nav {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .nav-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 12px 18px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center;
+    }
+
+    .nav-links {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 18px !important;
+        margin-top: 10px !important;
+        overflow: visible !important;
+    }
+
+    .nav-links a {
+        white-space: normal !important;
+        font-size: 14px !important;
+    }
+
+    /* PORTAL LOGIN */
+    .nav-login {
+        display: inline-block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        white-space: nowrap !important;
+        margin: 5px auto !important;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 90px 22px 60px !important;
+        overflow: hidden !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
+    }
+
+    .hero h1,
+    .hero-title {
+        max-width: 100% !important;
+        font-size: clamp(42px, 12vw, 68px) !important;
+        word-break: normal !important;
+    }
+
+    .hero p {
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .hero-buttons {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        max-width: 90% !important;
+    }
+
+
+    /* ---------- STUDENT PROJECTS ---------- */
+
+    .projects-section {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .projects-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .project-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* ---------- GENERAL SECTIONS ---------- */
+
+    section {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    .section-container,
+    .section-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+
+    /* ---------- CARDS ---------- */
+
+    .card,
+    .forum-card,
+    .academic-card {
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+
+    /* ---------- IMAGES ---------- */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 
 
