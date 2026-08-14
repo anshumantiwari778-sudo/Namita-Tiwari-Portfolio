@@ -4435,3 +4435,13 @@ body {
         opacity: 0.3;
     }
 }
+/* Fix AI orbit overlap on mobile */
+@media (max-width: 768px) {
+    .ai-orbit,
+    .ai-orbit-core,
+    .ai-orbit-dot,
+    .ai-orbit-container::before,
+    .ai-orbit-container::after {
+        display: none !important;
+    }
+}
