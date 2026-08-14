@@ -4445,19 +4445,7 @@ body {
         display: none !important;
     }
 }
-@media (max-width: 768px) {
-    .ai-orbit,
-    .ai-orbit-core,
-    .ai-orbit-dot,
-    .ai-right-object,
-    .ai-orbit-container,
-    .ai-orbit-container::before,
-    .ai-orbit-container::after,
-    .ai-right-object::before,
-    .ai-right-object::after {
-        display: none !important;
-    }
-}
+
 /* MOBILE FIX — FORUM SNAPSHOT OVERLAP */
 @media (max-width: 768px) {
     .forum-snapshot {
@@ -4506,5 +4494,16 @@ body {
         max-width: 100% !important;
         margin: 0 0 24px 0 !important;
         box-sizing: border-box !important;
+    }
+}
+/* ===== HIDE ONLY ACADEMIC FORUM AI ORBIT ON MOBILE ===== */
+@media (max-width: 768px) {
+    .academic-layout .ai-orbit,
+    .academic-layout .ai-orbit-core,
+    .academic-layout .ai-orbit-dot,
+    .academic-layout .ai-right-object,
+    .academic-layout .ai-orbit-container::before,
+    .academic-layout .ai-orbit-container::after {
+        display: none !important;
     }
 }
