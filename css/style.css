@@ -4535,3 +4535,17 @@ body {
         opacity: 0 !important;
     }
 }
+/* ===== REMOVE AI OBJECT COMPLETELY ON MOBILE ===== */
+@media (max-width: 768px) {
+    .ai-core,
+    .ai-orbit,
+    .ai-orbit-dot,
+    .ai-right-object,
+    .ai-orbit-container,
+    .ai-orbit-container::before,
+    .ai-orbit-container::after {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+    }
+}
