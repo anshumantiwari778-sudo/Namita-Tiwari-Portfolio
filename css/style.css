@@ -4458,3 +4458,22 @@ body {
         display: none !important;
     }
 }
+/* MOBILE FIX — FORUM SNAPSHOT OVERLAP */
+@media (max-width: 768px) {
+    .forum-snapshot {
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        transform: none !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+
+        margin: 20px 0 !important;
+        z-index: 1 !important;
+        box-sizing: border-box !important;
+    }
+}
