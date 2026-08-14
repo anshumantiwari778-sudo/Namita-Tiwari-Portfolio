@@ -3753,7 +3753,7 @@ body {
 .academic-cards {
     width: calc(100% - 410px) !important;
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-columns: 1fr !important;
     gap: 24px !important;
 }
 
