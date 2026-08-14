@@ -4477,3 +4477,34 @@ body {
         box-sizing: border-box !important;
     }
 }
+/* ===== ACADEMIC FORUM MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    .academic-layout {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .academic-cards {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .academic-card {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 24px 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .forum-snapshot {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 0 24px 0 !important;
+        box-sizing: border-box !important;
+    }
+}
