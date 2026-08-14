@@ -4535,17 +4535,13 @@ body {
         opacity: 0 !important;
     }
 }
-/* ===== REMOVE AI OBJECT COMPLETELY ON MOBILE ===== */
+/* ===== MOBILE: REMOVE ONLY SECOND AI OBJECT ===== */
 @media (max-width: 768px) {
-    .ai-core,
-    .ai-orbit,
-    .ai-orbit-dot,
-    .ai-right-object,
-    .ai-orbit-container,
-    .ai-orbit-container::before,
-    .ai-orbit-container::after {
+    .ai-orbit-container:nth-of-type(2),
+    .ai-orbit-container:nth-of-type(2) .ai-core,
+    .ai-orbit-container:nth-of-type(2) .ai-orbit,
+    .ai-orbit-container:nth-of-type(2) .ai-orbit-dot,
+    .ai-orbit-container:nth-of-type(2) .ai-right-object {
         display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
     }
 }
