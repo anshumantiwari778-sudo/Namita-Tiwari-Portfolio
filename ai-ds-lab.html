@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI & Data Science Lab | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(0, 120, 255, 0.18), transparent 35%),
+                radial-gradient(circle at 80% 80%, rgba(0, 80, 255, 0.18), transparent 35%),
+                #050816;
+        }
+
+        .lab-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+
+        .section-label {
+            color: #22d3ee;
+            letter-spacing: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 6vw, 76px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        h1 span {
+            color: #22d3ee;
+        }
+
+        .intro {
+            max-width: 800px;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #b8c4d8;
+            margin-bottom: 60px;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .lab-card {
+            padding: 35px;
+            min-height: 220px;
+            border: 1px solid rgba(34, 211, 238, 0.35);
+            border-radius: 24px;
+            background: rgba(20, 35, 65, 0.55);
+            backdrop-filter: blur(15px);
+            transition: 0.3s ease;
+        }
+
+        .lab-card:hover {
+            transform: translateY(-6px);
+            border-color: #22d3ee;
+        }
+
+        .lab-card h2 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .lab-card p {
+            color: #b8c4d8;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .status {
+            margin-top: 15px;
+            color: #22d3ee;
+            font-size: 14px;
+        }
+
+        .back {
+    text-decoration: none;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+        @media (max-width: 700px) {
+            .lab-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .lab-container {
+                padding: 45px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="lab-container">
+
+        <a href="portal.html" class="back">← Back to Academic Portal</a>
+
+        <div class="section-label">TECHNICAL LEARNING SPACE</div>
+
+        <h1>AI & Data Science <span>Lab</span></h1>
+
+        <p class="intro">
+            A dedicated technical space for datasets, notebooks, AI tools,
+            experiments and computational resources supporting academic
+            and research activities.
+        </p>
+
+        <div class="lab-grid">
+
+            <div class="lab-card">
+                <h2>📊 Datasets</h2>
+                <p>
+                    Curated datasets for academic analysis, machine learning
+                    experiments and data science activities.
+                </p>
+                <div class="status">Coming soon</div>
+            </div>
+
+            <div class="lab-card">
+                <h2>📓 Jupyter Notebooks</h2>
+                <p>
+                    Practical notebooks containing Python code, analysis,
+                    visualizations and AI experiments.
+                </p>
+                <div class="status">Coming soon</div>
+            </div>
+
+            <div class="lab-card">
+                <h2>🧠 AI Tools</h2>
+                <p>
+                    Useful artificial intelligence and data science tools
+                    for learning, experimentation and research.
+                </p>
+                <div class="status">Coming soon</div>
+            </div>
+
+            <div class="lab-card">
+                <h2>🧪 Experiments</h2>
+                <p>
+                    Experimental work, computational studies and research
+                    activities related to AI and Data Science.
+                </p>
+                <div class="status">Coming soon</div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
