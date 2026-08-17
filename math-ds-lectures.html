@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,7 @@
             padding: 50px 6%;
         }
 
-        .lecture-container {
+        .container {
             width: 90%;
             max-width: 1200px;
             margin: auto;
@@ -35,7 +36,7 @@
             color: #22d3ee;
             text-decoration: none;
             font-size: 16px;
-            margin-bottom: 55px;
+            margin-bottom: 50px;
         }
 
         .back:hover {
@@ -47,11 +48,11 @@
             letter-spacing: 4px;
             font-size: 14px;
             font-weight: bold;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         h1 {
-            font-size: 52px;
+            font-size: 48px;
             margin-bottom: 20px;
         }
 
@@ -60,7 +61,7 @@
         }
 
         .intro {
-            max-width: 950px;
+            max-width: 900px;
             font-size: 18px;
             line-height: 1.7;
             color: #b8c4d8;
@@ -74,45 +75,53 @@
         }
 
         .lecture-card {
-            padding: 30px;
+            padding: 32px;
             border: 1px solid rgba(100, 180, 255, 0.25);
             border-radius: 22px;
             background: rgba(20, 60, 140, 0.35);
             box-shadow: 0 0 25px rgba(0, 100, 255, 0.12);
+            transition: 0.3s ease;
         }
 
-        .lecture-number {
+        .lecture-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 30px rgba(34, 211, 238, 0.25);
+        }
+
+        .number {
             color: #22d3ee;
             font-size: 14px;
-            margin-bottom: 12px;
+            font-weight: bold;
+            margin-bottom: 14px;
         }
 
         .lecture-card h2 {
-            font-size: 24px;
+            font-size: 25px;
             margin-bottom: 15px;
         }
 
         .lecture-card p {
             color: #c4cede;
-            line-height: 1.6;
-            margin-bottom: 20px;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
 
-        .pdf-button {
+        .lecture-button {
             display: inline-block;
             padding: 11px 20px;
-            border-radius: 25px;
+            border-radius: 24px;
             background: #22d3ee;
             color: #06101f;
             text-decoration: none;
             font-weight: bold;
         }
 
-        .pdf-button:hover {
+        .lecture-button:hover {
             box-shadow: 0 0 18px rgba(34, 211, 238, 0.6);
         }
 
         @media (max-width: 700px) {
+
             .lecture-grid {
                 grid-template-columns: 1fr;
             }
@@ -121,7 +130,7 @@
                 font-size: 38px;
             }
 
-            .lecture-container {
+            .container {
                 width: 100%;
             }
         }
@@ -130,10 +139,10 @@
 
 <body>
 
-    <main class="lecture-container">
+    <main class="container">
 
-        <a href="resources.html" class="back">
-            ← Back to Student Resources
+        <a href="lecture-series.html" class="back">
+            ← Back to Lecture Series
         </a>
 
         <div class="section-label">
@@ -145,38 +154,115 @@
         </h1>
 
         <p class="intro">
-            Lecture materials, presentations and academic learning resources
-            covering mathematical concepts and techniques used in Data Science.
+            Lecture materials and academic learning resources covering
+            mathematical concepts and techniques supporting Data Science,
+            analytical studies and computational learning.
         </p>
 
         <div class="lecture-grid">
 
+            <!-- 01 -->
             <div class="lecture-card">
-                <div class="lecture-number">01</div>
+                <div class="number">01</div>
 
-                <h2>Mathematical Foundations</h2>
+                <h2>📊 Determinants</h2>
 
                 <p>
-                    Fundamental mathematical concepts supporting
-                    Data Science and analytical learning.
+                    Determinants, minors and cofactors, properties of
+                    determinants, products of determinants and related
+                    mathematical concepts.
                 </p>
 
-                <a href="#" class="pdf-button">
+                <a href="#" class="lecture-button">
                     View PDF →
                 </a>
             </div>
 
-            <div class="lecture-card">
-                <div class="lecture-number">02</div>
 
-                <h2>Linear Algebra</h2>
+            <!-- 02 -->
+            <div class="lecture-card">
+                <div class="number">02</div>
+
+                <h2>🧮 Solution of Linear Equations</h2>
 
                 <p>
-                    Vectors, matrices, linear transformations and
-                    mathematical concepts used in Data Science.
+                    Systems of linear equations, rank, consistency,
+                    augmented matrices, homogeneous equations and
+                    methods of solution.
                 </p>
 
-                <a href="#" class="pdf-button">
+                <a href="#" class="lecture-button">
+                    View PDF →
+                </a>
+            </div>
+
+
+            <!-- 03 -->
+            <div class="lecture-card">
+                <div class="number">03</div>
+
+                <h2>🔢 Eigenvalues &amp; Eigenvectors</h2>
+
+                <p>
+                    Eigenvalues, eigenvectors, characteristic equations,
+                    properties of eigenvalues and the Cayley-Hamilton
+                    theorem.
+                </p>
+
+                <a href="#" class="lecture-button">
+                    View PDF →
+                </a>
+            </div>
+
+
+            <!-- 04 -->
+            <div class="lecture-card">
+                <div class="number">04</div>
+
+                <h2>📐 Vectors</h2>
+
+                <p>
+                    Scalars and vectors, vector operations, scalar
+                    multiplication, magnitude, direction cosines and
+                    rectangular resolution of vectors.
+                </p>
+
+                <a href="#" class="lecture-button">
+                    View PDF →
+                </a>
+            </div>
+
+
+            <!-- 05 -->
+            <div class="lecture-card">
+                <div class="number">05</div>
+
+                <h2>✖️ Vector Product</h2>
+
+                <p>
+                    Vector product, geometrical interpretation,
+                    properties of the cross product, distributive law
+                    and determinant representation.
+                </p>
+
+                <a href="#" class="lecture-button">
+                    View PDF →
+                </a>
+            </div>
+
+
+            <!-- 06 -->
+            <div class="lecture-card">
+                <div class="number">06</div>
+
+                <h2>∇ Vector Calculus</h2>
+
+                <p>
+                    Gradient, directional derivative, normal derivative,
+                    divergence, curl and related vector-calculus concepts.
+                </p>
+
+                <a href="#" class="lecture-button">
                     View PDF →
                 </a>
             </div>
@@ -186,4 +272,5 @@
     </main>
 
 </body>
+
 </html>
