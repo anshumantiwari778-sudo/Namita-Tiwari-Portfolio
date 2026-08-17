@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mathematics for Data Science | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(circle at top left, rgba(0, 120, 255, 0.18), transparent 40%),
+                radial-gradient(circle at bottom right, rgba(0, 80, 255, 0.18), transparent 40%),
+                #050816;
+            padding: 50px 6%;
+        }
+
+        .lecture-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 55px;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .section-label {
+            color: #22d3ee;
+            letter-spacing: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #22d3ee;
+        }
+
+        .intro {
+            max-width: 950px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #b8c4d8;
+            margin-bottom: 50px;
+        }
+
+        .lecture-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .lecture-card {
+            padding: 30px;
+            border: 1px solid rgba(100, 180, 255, 0.25);
+            border-radius: 22px;
+            background: rgba(20, 60, 140, 0.35);
+            box-shadow: 0 0 25px rgba(0, 100, 255, 0.12);
+        }
+
+        .lecture-number {
+            color: #22d3ee;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .lecture-card h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .lecture-card p {
+            color: #c4cede;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 25px;
+            background: #22d3ee;
+            color: #06101f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .pdf-button:hover {
+            box-shadow: 0 0 18px rgba(34, 211, 238, 0.6);
+        }
+
+        @media (max-width: 700px) {
+            .lecture-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .lecture-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="lecture-container">
+
+        <a href="resources.html" class="back">
+            ← Back to Student Resources
+        </a>
+
+        <div class="section-label">
+            LECTURE SERIES
+        </div>
+
+        <h1>
+            Mathematics for <span>Data Science</span>
+        </h1>
+
+        <p class="intro">
+            Lecture materials, presentations and academic learning resources
+            covering mathematical concepts and techniques used in Data Science.
+        </p>
+
+        <div class="lecture-grid">
+
+            <div class="lecture-card">
+                <div class="lecture-number">01</div>
+
+                <h2>Mathematical Foundations</h2>
+
+                <p>
+                    Fundamental mathematical concepts supporting
+                    Data Science and analytical learning.
+                </p>
+
+                <a href="#" class="pdf-button">
+                    View PDF →
+                </a>
+            </div>
+
+            <div class="lecture-card">
+                <div class="lecture-number">02</div>
+
+                <h2>Linear Algebra</h2>
+
+                <p>
+                    Vectors, matrices, linear transformations and
+                    mathematical concepts used in Data Science.
+                </p>
+
+                <a href="#" class="pdf-button">
+                    View PDF →
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

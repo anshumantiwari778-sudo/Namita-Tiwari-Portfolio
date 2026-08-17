@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Lecture Series | Dr. Namita Tiwari</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+            background:
+                radial-gradient(circle at top left, rgba(0,120,255,0.20), transparent 35%),
+                radial-gradient(circle at bottom right, rgba(0,80,255,0.18), transparent 35%),
+                #050816;
+            padding: 50px 6%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .back {
+            display: inline-block;
+            color: #22d3ee;
+            text-decoration: none;
+            font-size: 16px;
+            margin-bottom: 45px;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+            color: #67e8f9;
+        }
+
+        .section-label {
+            color: #22d3ee;
+            letter-spacing: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        h1 span {
+            color: #22d3ee;
+        }
+
+        .intro {
+            max-width: 850px;
+            color: #b8c4d8;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 50px;
+        }
+
+        .lecture-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .lecture-card {
+            padding: 30px;
+            border-radius: 20px;
+            background: linear-gradient(
+                135deg,
+                rgba(20,70,180,0.38),
+                rgba(10,35,110,0.30)
+            );
+            border: 1px solid rgba(80,170,255,0.30);
+            box-shadow: 0 10px 35px rgba(0,0,0,0.20);
+            transition: 0.3s ease;
+        }
+
+        .lecture-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(34,211,238,0.75);
+            box-shadow: 0 15px 40px rgba(0,120,255,0.20);
+        }
+
+        .number {
+            color: #8b9bb5;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .lecture-card h2 {
+            color: #22d3ee;
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .lecture-card p {
+            color: #c3cede;
+            line-height: 1.6;
+            margin-bottom: 22px;
+        }
+
+        .pdf-button {
+            display: inline-block;
+            padding: 11px 20px;
+            border-radius: 25px;
+            background: #22d3ee;
+            color: #04111f;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .pdf-button:hover {
+            background: #67e8f9;
+            transform: translateY(-2px);
+        }
+
+        .material-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pdf-button.secondary {
+    background: rgba(34, 211, 238, 0.12);
+    color: #22d3ee;
+    border: 1px solid rgba(34, 211, 238, 0.4);
+}
+
+.pdf-button.secondary:hover {
+    background: rgba(34, 211, 238, 0.22);
+}
+
+        .supporting {
+            margin-top: 60px;
+        }
+
+        .supporting h2 {
+            color: #22d3ee;
+            margin-bottom: 25px;
+            font-size: 28px;
+        }
+
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .support-card {
+            padding: 25px;
+            border-radius: 18px;
+            background: rgba(20,60,150,0.28);
+            border: 1px solid rgba(80,170,255,0.25);
+        }
+
+        .support-card h3 {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .support-card p {
+            color: #b8c4d8;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 800px) {
+            body {
+                padding: 35px 18px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .lecture-grid,
+            .support-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <a href="resources.html" class="back">← Back to Student Resources</a>
+
+    <div class="section-label">LECTURE SERIES</div>
+
+    <h1>Artificial <span>Intelligence</span></h1>
+
+    <p class="intro">
+        Lecture materials, presentations and academic learning resources
+        covering Artificial Intelligence, intelligent agents, problem solving,
+        search strategies, knowledge representation and reasoning.
+    </p>
+
+    <div class="lecture-grid">
+
+        <div class="lecture-card">
+            <div class="number">01</div>
+            <h2>Introduction to Artificial Intelligence</h2>
+            <p>Introduction to intelligence, Artificial Intelligence, AI around us and the connection between AI and mathematics.</p>
+            <div class="material-buttons">
+            <a href="#" class="pdf-button">📄 Main Lecture</a>
+            <a href="#" class="pdf-button secondary">📝 Notes</a>
+            <a href="#" class="pdf-button secondary">📊 Practice</a>
+            </div>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">02</div>
+            <h2>Foundations of AI</h2>
+            <p>Foundations of Artificial Intelligence, intelligence, applications of AI and its connection with mathematics and security.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">03</div>
+            <h2>Intelligent Agents & Environment</h2>
+            <p>Understanding intelligent agents and the environments in which they operate.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">04</div>
+            <h2>Problem-Solving Agents</h2>
+            <p>Introduction to problem-solving agents and their approach to finding solutions.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">05</div>
+            <h2>Problem Formulation</h2>
+            <p>Formulating AI problems using states, actions, goals and problem-solving frameworks.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">06</div>
+            <h2>Search Strategies</h2>
+            <p>State-space search, tree and graph search, BFS, DFS, UCS, Greedy Best-First Search and A*.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">07</div>
+            <h2>Convexity, Search & AI Agents</h2>
+            <p>Convexity, optimization, search algorithms and their connection with AI agent decision-making.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">08</div>
+            <h2>Knowledge-Based Agents</h2>
+            <p>Knowledge bases, inference and reasoning in intelligent agents.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">09</div>
+            <h2>Knowledge & Reasoning</h2>
+            <p>Understanding knowledge representation and reasoning processes used in AI.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">10</div>
+            <h2>Propositional Logic</h2>
+            <p>Propositions, logical connectives, syntax, semantics and truth values.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+        <div class="lecture-card">
+            <div class="number">11</div>
+            <h2>Truth Tables & Inference</h2>
+            <p>Truth tables, implication, biconditional, entailment and logical inference.</p>
+            <a href="#" class="pdf-button">View PDF →</a>
+        </div>
+
+    </div>
+
+    <div class="supporting">
+
+        <h2>📚 Supporting Material</h2>
+
+        <div class="support-grid">
+
+            <div class="support-card">
+                <h3>📝 Assignments & Activities</h3>
+                <p>AI assignments, classroom activities and academic tasks.</p>
+            </div>
+
+            <div class="support-card">
+                <h3>📖 Student Notes</h3>
+                <p>Additional notes and learning material for AI topics.</p>
+            </div>
+
+            <div class="support-card">
+                <h3>📊 Practice & MCQs</h3>
+                <p>Practice questions and multiple-choice questions for revision.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
